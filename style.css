@@ -218,6 +218,9 @@ main { max-width: 860px; margin: 0 auto; padding: 30px 24px 60px; }
 .achievements li { padding-left: 20px; position: relative; color: var(--muted); }
 .achievements li::before { content: "★"; position: absolute; left: 0; color: var(--accent); }
 .achievements li strong { color: var(--text); }
+.ach-link { text-decoration: none; color: var(--primary); }
+.ach-link strong { color: var(--primary); }
+.ach-link:hover strong { text-decoration: underline; }
 
 /* Projects */
 .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
@@ -235,7 +238,36 @@ main { max-width: 860px; margin: 0 auto; padding: 30px 24px 60px; }
   color: var(--primary);
   margin-bottom: 8px;
 }
-.card p:last-child { color: var(--muted); font-size: 0.9rem; }
+.card p { color: var(--muted); font-size: 0.9rem; }
+
+.card-link {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--primary);
+  text-decoration: none;
+}
+.card-link:hover { text-decoration: underline; }
+
+/* Certification links */
+.cert-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+.cert-links a {
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--primary-soft);
+  color: var(--primary);
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+.cert-links a:hover { transform: translateY(-2px); border-color: var(--primary); }
 
 footer {
   text-align: center;
