@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prem Tiwari — Résumé</title>
+  <meta name="description" content="Prem Tiwari — Software Engineer II. Backend & Data Engineering résumé." />
+  <style>
+    :root {
+      --ink: #1a1a1a;
+      --muted: #444;
+      --rule: #cfcfcf;
+      --accent: #1a3d7c;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--ink);
+      background: #e9ebf0;
+      line-height: 1.4;
+      font-size: 11pt;
+    }
+
+    /* Screen toolbar */
+    .toolbar {
+      position: sticky;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      padding: 14px;
+      background: #ffffff;
+      border-bottom: 1px solid var(--rule);
+      z-index: 10;
+    }
+    .toolbar button, .toolbar a {
+      font-family: Arial, sans-serif;
+      font-size: 10pt;
+      font-weight: 600;
+      padding: 9px 18px;
+      border-radius: 6px;
+      border: 1px solid var(--accent);
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .btn-print { background: var(--accent); color: #fff; }
+    .btn-back { background: #fff; color: var(--accent); }
+
+    /* The printable sheet */
+    .sheet {
+      background: #fff;
+      width: 210mm;
+      min-height: 297mm;
+      margin: 20px auto;
+      padding: 16mm 16mm 14mm;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+    }
+
+    header.head { text-align: center; border-bottom: 2px solid var(--ink); padding-bottom: 10px; margin-bottom: 12px; }
+    header.head h1 { font-size: 22pt; letter-spacing: 0.5px; color: var(--ink); }
+    header.head .title { font-size: 11.5pt; color: var(--accent); font-weight: bold; margin-top: 2px; }
+    header.head .contact { font-family: Arial, sans-serif; font-size: 9pt; color: var(--muted); margin-top: 7px; line-height: 1.6; }
+    header.head .contact a { color: var(--accent); text-decoration: none; }
+
+    section { margin-top: 13px; }
+    h2 {
+      font-family: Arial, sans-serif;
+      font-size: 11pt;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--accent);
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 3px;
+      margin-bottom: 7px;
+    }
+
+    p.summary { text-align: justify; }
+
+    .skills-table { width: 100%; border-collapse: collapse; }
+    .skills-table td { vertical-align: top; padding: 2px 0; }
+    .skills-table td.label { width: 165px; font-weight: bold; font-family: Arial, sans-serif; font-size: 9.5pt; color: var(--ink); padding-right: 10px; }
+    .skills-table td.val { font-family: Arial, sans-serif; font-size: 9.5pt; color: var(--muted); }
+
+    .role { margin-bottom: 10px; }
+    .role-head { display: flex; justify-content: space-between; align-items: baseline; }
+    .role-head .pos { font-weight: bold; font-size: 11pt; }
+    .role-head .comp { font-style: italic; color: var(--accent); }
+    .role-head .date { font-family: Arial, sans-serif; font-size: 9pt; color: var(--muted); white-space: nowrap; }
+    ul { margin: 4px 0 0 18px; }
+    ul li { margin-bottom: 3px; text-align: justify; }
+
+    .edu-line { display: flex; justify-content: space-between; align-items: baseline; }
+    .edu-line .date { font-family: Arial, sans-serif; font-size: 9pt; color: var(--muted); }
+
+    .two { display: flex; gap: 26px; }
+    .two > div { flex: 1; }
+    .achv { margin: 0 0 0 18px; }
+    .achv li { margin-bottom: 3px; }
+
+    a { color: var(--accent); }
+
+    /* ---------- PRINT ---------- */
+    @page { size: A4; margin: 12mm; }
+    @media print {
+      body { background: #fff; font-size: 10.5pt; }
+      .toolbar { display: none; }
+      .sheet { width: auto; min-height: auto; margin: 0; padding: 0; box-shadow: none; }
+      a { color: var(--ink); }
+      header.head .contact a { color: var(--ink); }
+      section, .role { page-break-inside: avoid; }
+      h2 { page-break-after: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <button class="btn-print" onclick="window.print()">⬇ Download PDF / Print</button>
+    <a class="btn-back" href="index.html">← Back to portfolio</a>
+  </div>
+
+  <div class="sheet">
+    <header class="head">
+      <h1>PREM TIWARI</h1>
+      <div class="title">Software Engineer II · Backend &amp; Data Engineering</div>
+      <div class="contact">
+        Bengaluru, Karnataka, India &nbsp;•&nbsp; +91 96448 46577 &nbsp;•&nbsp;
+        <a href="mailto:premtiwari14f@gmail.com">premtiwari14f@gmail.com</a><br />
+        <a href="https://premtiwari14f.github.io/about-me/">Portfolio</a> &nbsp;•&nbsp;
+        <a href="https://www.linkedin.com/in/premtiwari14f/">linkedin.com/in/premtiwari14f</a> &nbsp;•&nbsp;
+        <a href="https://github.com/premtiwari14f">github.com/premtiwari14f</a> &nbsp;•&nbsp;
+        <a href="https://leetcode.com/u/prem14f/">leetcode.com/u/prem14f</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>Summary</h2>
+      <p class="summary">
+        Software Engineer II with 3.5+ years building scalable data platforms and cloud-native backend systems —
+        real-time streaming, high-throughput pipelines, CDC, and observability at scale. Strong across Python,
+        PySpark, Spark, Kafka, Flink, Databricks, Snowflake, and AWS, with a focus on cost, reliability, and
+        throughput. Passionate about clean architecture, automation, and building efficient, maintainable systems.
+      </p>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="edu-line">
+        <span><strong>B.Tech, Information Technology</strong> — Jabalpur Engineering College, Jabalpur, M.P.</span>
+        <span class="date">Jul 2019 – Apr 2023</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Technical Skills</h2>
+      <table class="skills-table">
+        <tr>
+          <td class="label">Languages</td>
+          <td class="val">Python, C++, Java, SQL; OOP, DSA, LLD/HLD</td>
+        </tr>
+        <tr>
+          <td class="label">Data Engineering</td>
+          <td class="val">Spark, PySpark, Kafka, Flink, Databricks, Airflow, Airbyte, Snowflake, Delta Lake, DBT, ETL, Data Warehousing, Data Modeling, CDC</td>
+        </tr>
+        <tr>
+          <td class="label">AWS &amp; Cloud</td>
+          <td class="val">EC2, S3, Lambda, Kinesis, MSK, SNS, SQS, Glue, API Gateway, VPC, Route 53, CloudWatch, OpenSearch, Logstash</td>
+        </tr>
+        <tr>
+          <td class="label">Databases</td>
+          <td class="val">PostgreSQL, MongoDB, DynamoDB, Redis, Snowflake</td>
+        </tr>
+        <tr>
+          <td class="label">DevOps &amp; Tools</td>
+          <td class="val">Docker, Kubernetes, KEDA, Terraform, Terragrunt, Ansible, Jenkins, GitHub Actions, Grafana, MLflow, Postman, SonarQube</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Professional Experience</h2>
+
+      <div class="role">
+        <div class="role-head">
+          <span class="pos">Software Engineer II <span class="comp">— Smartsheet</span></span>
+          <span class="date">Oct 2025 – Present</span>
+        </div>
+        <ul>
+          <li>Migrated multi-task streaming jobs from all-purpose to job clusters, cutting compute costs by <strong>$200K+ annually</strong>.</li>
+          <li>Re-architected legacy Snowflake pipelines onto Databricks from scratch — a reusable, config-driven template ingesting from Airbyte, REST APIs, and Databricks connectors as parallel tasks in one multi-task job, feeding a medallion pipeline (S3 → Auto Loader → Spark Structured Streaming → Gold).</li>
+          <li>Built a CDC pipeline capturing change-data-capture from the PostgreSQL binlog using Flink, streaming into Kinesis (one shard per table) and landing into Delta tables via medallion architecture.</li>
+          <li>Drove CI/CD adoption via Databricks Asset Bundles, enabling automated, consistent deployments across environments.</li>
+          <li>Migrated <strong>1900+ files</strong> into a new parent folder with zero breaking changes, updating CI runners, GitLab CI, and AWS Secrets Manager fetching.</li>
+          <li>Built a high-availability log pipeline (CloudWatch → Kinesis → Logstash → OpenSearch) with sub-second search and zero-data-loss ingestion at scale.</li>
+          <li>Hardened legacy ingestion (Airbyte → S3 → Airflow → Snowflake), reducing daily failures by <strong>~34%</strong>.</li>
+        </ul>
+      </div>
+
+      <div class="role">
+        <div class="role-head">
+          <span class="pos">Data Engineer <span class="comp">— Vestas</span></span>
+          <span class="date">Feb 2024 – Sep 2025</span>
+        </div>
+        <ul>
+          <li>Built from scratch a real-time, millisecond-latency alarm platform on Kafka, Redis, and Kinesis (containerized with Docker), exposing an API serving alarms (warning, error, operational) from DynamoDB with event open/close tracking and Protobuf-encoded payloads; also streamed alarm data via Kinesis into Delta tables for analytics and data science teams.</li>
+          <li>Built an OPC-UA IoT pipeline from scratch after an AWS Greengrass POC fell short — asynchronously traversing the OPC-UA node tree, handling encryption, and streaming to AWS MSK, with local-server buffering for resilience; enhanced data availability by <strong>96%</strong>.</li>
+          <li>Built MQTT ingestion pulling from a broker and pushing to MSK using async Python libraries, fully containerized in Docker.</li>
+          <li>Re-built a legacy Databricks streaming job as a Dockerized service (MSK → Kinesis) with KEDA autoscaling on Kafka lag, cutting ingestion latency from minutes to <strong>10–20 seconds</strong>.</li>
+          <li>Built a KEDA-scalable service replicating data from prod Kafka to QA/Dev Kafka with configurable filtering and row limits, keeping non-prod costs low.</li>
+          <li>Optimized Databricks/PySpark pipelines for solar &amp; wind farm data, cutting processing time and latency by <strong>~62%</strong> by switching the source from S3 to Kinesis.</li>
+          <li>Built a file download API (DocumentDB metadata + AWS S3 retrieval) with cursor-based pagination across web views listing hundreds of files.</li>
+        </ul>
+      </div>
+
+      <div class="role">
+        <div class="role-head">
+          <span class="pos">Assistant Data Engineer <span class="comp">— Utopus Insights (a Vestas company)</span></span>
+          <span class="date">Feb 2023 – Jan 2024</span>
+        </div>
+        <ul>
+          <li>Built new-customer ingestion tracking wind-turbine events from API data (warning, error, running, service) with accurate logging; authored LLD &amp; HLD.</li>
+          <li>Built from scratch a new API data source with checkpointing (persisting the last-polled timestamp for gap-free resumption), pushing real-time data into Delta tables; increased data-collection efficiency by <strong>100%</strong>.</li>
+          <li>Built a monitoring system surfacing data latency across source services and pinpointing bottlenecks; reduced API latency by <strong>36%</strong>.</li>
+          <li>Automated the previously manual, accuracy-based ML model registration to AWS S3, saving the team <strong>12 hrs/week</strong>; raised unit-test coverage to <strong>95%</strong>.</li>
+          <li>Delivered seamless Databricks LTS upgrades across <strong>50+</strong> jobs with rigorous data-quality testing and zero pipeline failures.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Achievements &amp; Certifications</h2>
+      <div class="two">
+        <div>
+          <ul class="achv">
+            <li><strong><a href="https://www.codechef.com/users/premtiwari14f">CodeChef</a>:</strong> 5-star, Global Rank 8, College Rank 1 (Starters 70)</li>
+            <li><strong><a href="https://leetcode.com/u/prem14f/">LeetCode</a> &amp; <a href="https://www.geeksforgeeks.org/user/premlkt123/">GeeksforGeeks</a>:</strong> 450+ problems solved</li>
+            <li><strong><a href="https://drive.google.com/file/d/1IbciAmqz7Y8NESAfF_hLhXyEHzW9FNl_/view?usp=sharing">TCS CodeVita</a>:</strong> Round 2 Global Rank 83</li>
+            <li><strong><a href="https://drive.google.com/file/d/14MqRZaM0MDjgBrjLulz52H-pFFLaEYYh/view?usp=sharing">GFG Job-A-Thon 6</a>:</strong> Global Rank 76</li>
+          </ul>
+        </div>
+        <div>
+          <ul class="achv">
+            <li><strong>Snowflake Certifications:</strong>
+              <a href="https://achieve.snowflake.com/23ab3a8b-5385-4381-ab8c-739de471c51a#acc.8QrqWa4d">Collaboration &amp; Marketplace</a>,
+              <a href="https://achieve.snowflake.com/2c4ed677-e18a-403d-9496-b221733350d4#acc.kE2SePz9">Data Application</a>,
+              <a href="https://achieve.snowflake.com/67aa6a4b-f3d9-4886-a0e3-14d053d1676d#acc.KMYrqgw4">Data Lake</a>,
+              <a href="https://achieve.snowflake.com/810f2bc5-b9cb-42fa-8d0e-07bd6bc1b5c5#acc.BLj75CGm">Data Warehousing</a>,
+              <a href="https://achieve.snowflake.com/c47f8edf-21a6-48f8-be7a-835d4eb55972#acc.sAkRndZB">Data Engineering</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

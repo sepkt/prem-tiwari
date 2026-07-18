@@ -3,183 +3,299 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Prem Tiwari — Software Engineer II</title>
-  <meta name="description" content="Prem Tiwari — Software Engineer II at Smartsheet. Data pipelines, real-time processing, cloud-native systems." />
+  <title>Prem Tiwari — Software Engineer II · Backend &amp; Data Engineering</title>
+  <meta name="description" content="Prem Tiwari — Software Engineer II at Smartsheet. Backend and data engineering: scalable data pipelines, real-time streaming, cloud-native systems on AWS, Databricks, Spark, and Kafka." />
+  <meta property="og:title" content="Prem Tiwari — Software Engineer II" />
+  <meta property="og:description" content="Backend & Data Engineer specializing in scalable pipelines, real-time streaming, and cloud-native systems." />
+  <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <a href="#top" class="brand">
+      <span class="brand-mark">PT</span>
+      <span class="brand-name">Prem Tiwari</span>
+    </a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#achievements">Achievements</a>
+    </div>
+    <div class="nav-actions">
+      <a href="resume.html" class="nav-cta">Résumé</a>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+    </div>
+  </nav>
 
-  <header class="hero">
-    <div class="hero-inner">
+  <!-- Hero -->
+  <header class="hero" id="top">
+    <div class="hero-inner reveal">
       <img class="avatar-photo" src="profile.png" alt="Prem Tiwari" />
       <h1>Prem Tiwari</h1>
-      <p class="role">Software Engineer II <span class="at">@</span> Smartsheet</p>
-      <p class="location">Bengaluru, Karnataka, India</p>
+      <p class="current-role"><span class="dot"></span> Currently <strong>Software Engineer II</strong> at <strong>Smartsheet</strong></p>
+      <p class="tagline">
+        I build <strong>scalable data platforms</strong> and <strong>cloud-native backend systems</strong> —
+        real-time streaming, high-throughput pipelines, and observability at scale.
+      </p>
+      <p class="location">📍 Bengaluru, Karnataka, India</p>
 
-      <div class="contact">
-        <a href="mailto:premxivfeb@gmail.com" class="chip">✉️ premxivfeb@gmail.com</a>
-        <a href="tel:+919993634163" class="chip">📞 +91 99936 34163</a>
-        <a href="https://www.linkedin.com/in/premtiwari14f/" target="_blank" rel="noopener" class="chip">LinkedIn</a>
-        <a href="https://github.com/premtiwari14f" target="_blank" rel="noopener" class="chip">GitHub</a>
-        <a href="https://leetcode.com/u/prem14f/" target="_blank" rel="noopener" class="chip">LeetCode</a>
-        <a href="https://www.codechef.com/users/premtiwari14f" target="_blank" rel="noopener" class="chip">CodeChef</a>
-        <a href="https://www.geeksforgeeks.org/user/premlkt123/" target="_blank" rel="noopener" class="chip">GeeksforGeeks</a>
+      <div class="hero-cta">
+        <a href="resume.html" class="btn btn-primary">📄 View / Download Résumé</a>
+      </div>
+
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/premtiwari14f/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/premtiwari14f" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://wa.me/919644846577" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://leetcode.com/u/prem14f/" target="_blank" rel="noopener">LeetCode</a>
+        <a href="https://www.codechef.com/users/premtiwari14f" target="_blank" rel="noopener">CodeChef</a>
+        <a href="https://www.geeksforgeeks.org/user/premlkt123/" target="_blank" rel="noopener">GeeksforGeeks</a>
       </div>
     </div>
+
   </header>
 
   <main>
-    <section class="section" id="summary">
-      <h2><span class="num">01</span> Professional Summary</h2>
-      <p class="summary">
-        Results-driven SDE with expertise in scalable data pipelines, real-time processing, and IoT
-        data ingestion using protocols like OPC-UA and MQTT, alongside technologies like Kafka, Redis,
-        Spark, and AWS. Currently at Smartsheet, delivering cloud-native, high-performance energy data
-        solutions. Skilled in Python, PySpark, Delta Lake, ETL, Data Warehousing, Data Modeling and
-        Databricks, with a focus on optimizing large-scale workflows. Strong team player, passionate
-        about collaborative problem-solving and building efficient, maintainable, and impactful data systems.
+    <!-- About -->
+    <section class="section reveal" id="about">
+      <div class="section-head">
+        <span class="num">01</span>
+        <h2>About</h2>
+      </div>
+      <p class="lead">
+        Results-driven software engineer specializing in <strong>backend and data engineering</strong>. I design and
+        operate scalable data pipelines, real-time processing systems, and IoT ingestion (OPC-UA, MQTT) using
+        Kafka, Redis, Spark, and AWS. Currently at <strong>Smartsheet</strong>, delivering cloud-native,
+        high-performance data solutions.
+      </p>
+      <p class="muted-body">
+        I work fluently across <strong>Python, PySpark, Delta Lake, ETL, data warehousing, data modeling,
+        Databricks, and Snowflake</strong>, and build cloud-native services on <strong>AWS</strong> across
+        multiple services — <strong>EC2, S3, Lambda, Kinesis, SNS/SQS, Glue, and CloudWatch</strong>. I have
+        strong experience in <strong>REST API development</strong> and working with a range of data stores
+        including <strong>PostgreSQL, DynamoDB, MongoDB, Redis, and OpenSearch</strong>, with a focus on
+        optimizing large-scale workflows for cost, reliability, and throughput. I care deeply about clean
+        architecture, observability, and building systems that are efficient, maintainable, and genuinely impactful.
       </p>
     </section>
 
-    <section class="section" id="skills">
-      <h2><span class="num">02</span> Skills</h2>
-
-      <div class="skill-group">
-        <h3>Programming &amp; Core</h3>
-        <div class="tags">
-          <span>Python</span><span>C++</span><span>Java</span><span>OOPs</span><span>DSA</span>
-          <span>Unit Testing</span><span>Mocking</span><span>Feature Engineering</span>
-          <span>Data Cleaning</span><span>Machine Learning</span><span>Visualization</span>
-          <span>LLD</span><span>HLD</span><span>Excel</span>
+    <!-- Education -->
+    <section class="section reveal" id="education">
+      <div class="section-head">
+        <span class="num">02</span>
+        <h2>Education</h2>
+      </div>
+      <div class="job-head">
+        <div>
+          <h3>B.Tech, Information Technology</h3>
+          <p class="company">Jabalpur Engineering College</p>
         </div>
+        <span class="period">Jul 2019 – Apr 2023</span>
+      </div>
+      <p class="muted">Jabalpur, Madhya Pradesh, India</p>
+    </section>
+
+    <!-- Skills -->
+    <section class="section reveal" id="skills">
+      <div class="section-head">
+        <span class="num">03</span>
+        <h2>Technical Skills</h2>
       </div>
 
-      <div class="skill-group">
-        <h3>Data Engineering, Cloud &amp; Databases</h3>
-        <div class="tags">
-          <span>AWS (EC2, S3, Lambda, SNS, SQS, Kinesis, DynamoDB, Glue)</span>
-          <span>Databricks</span><span>Snowflake</span><span>Airflow</span><span>Airbyte</span>
-          <span>DBT</span><span>Spark</span><span>Kafka</span><span>Redis</span><span>ETL</span>
-          <span>Data Warehousing</span><span>Data Modeling</span><span>OpenSearch</span>
-          <span>Logstash</span><span>CloudWatch</span><span>PostgreSQL</span><span>MongoDB</span>
+      <div class="skills-list">
+        <div class="skill-row">
+          <h3>Languages &amp; Foundations</h3>
+          <div class="tags">
+            <span><img class="si" src="https://cdn.simpleicons.org/python/3776AB" alt="" />Python</span>
+            <span><img class="si" src="https://cdn.simpleicons.org/cplusplus/00599C" alt="" />C++</span>
+            <span><img class="si dark-invert" src="https://cdn.simpleicons.org/openjdk/000000" alt="" />Java</span>
+            <span>SQL</span><span>OOP</span><span>DSA</span><span>LLD</span><span>HLD</span>
+          </div>
         </div>
-      </div>
 
-      <div class="skill-group">
-        <h3>DevOps, CI/CD &amp; Tools</h3>
-        <div class="tags">
-          <span>Docker</span><span>Kubernetes</span><span>Git</span><span>GitHub Actions</span>
-          <span>Jenkins</span><span>Terraform</span><span>Terragrunt</span><span>Ansible</span>
-          <span>MLflow</span><span>SonarQube</span><span>Postman</span><span>Grafana</span>
-          <span>Databricks Asset Bundles</span>
+        <div class="skill-row">
+          <h3>Data Engineering &amp; Databases</h3>
+          <div class="tags">
+            <span><img class="si" src="https://cdn.simpleicons.org/apachespark/E25A1C" alt="" />Spark / PySpark</span>
+            <span><img class="si dark-invert" src="https://cdn.simpleicons.org/apachekafka/000000" alt="" />Kafka</span>
+            <span><img class="si" src="https://cdn.simpleicons.org/databricks/FF3621" alt="" />Databricks</span>
+            <span><img class="si" src="https://cdn.simpleicons.org/apacheairflow/017CEE" alt="" />Airflow</span>
+            <span><img class="si" src="https://cdn.simpleicons.org/airbyte/615EFF" alt="" />Airbyte</span>
+            <span><img class="si" src="https://cdn.simpleicons.org/snowflake/29B5E8" alt="" />Snowflake</span>
+            <span><img class="si" src="https://cdn.simpleicons.org/postgresql/4169E1" alt="" />PostgreSQL</span>
+            <span><img class="si" src="https://cdn.simpleicons.org/mongodb/47A248" alt="" />MongoDB</span>
+            <span><img class="si" src="https://icon.icepanel.io/AWS/svg/Database/DynamoDB.svg" alt="" />DynamoDB</span>
+            <span><img class="si" src="https://cdn.simpleicons.org/redis/FF4438" alt="" />Redis</span>
+            <span>Delta Lake</span><span>DBT</span><span>ETL</span>
+            <span>Data Warehousing</span><span>Data Modeling</span>
+          </div>
+        </div>
+
+        <div class="skill-row">
+          <h3>AWS &amp; Cloud</h3>
+          <div class="tags">
+            <span><img class="si" src="https://icon.icepanel.io/AWS/svg/Compute/EC2.svg" alt="" />EC2</span>
+            <span><img class="si" src="https://icon.icepanel.io/AWS/svg/Storage/Simple-Storage-Service.svg" alt="" />S3</span>
+            <span><img class="si" src="https://icon.icepanel.io/AWS/svg/Compute/Lambda.svg" alt="" />Lambda</span>
+            <span><img class="si" src="https://icon.icepanel.io/AWS/svg/Analytics/Kinesis.svg" alt="" />Kinesis</span>
+            <span><img class="si" src="https://icon.icepanel.io/AWS/svg/App-Integration/Simple-Notification-Service.svg" alt="" />SNS</span>
+            <span><img class="si" src="https://icon.icepanel.io/AWS/svg/App-Integration/Simple-Queue-Service.svg" alt="" />SQS</span>
+            <span><img class="si" src="https://icon.icepanel.io/AWS/svg/Analytics/Glue.svg" alt="" />Glue</span>
+            <span><img class="si" src="https://icon.icepanel.io/AWS/svg/App-Integration/API-Gateway.svg" alt="" />API Gateway</span>
+            <span><img class="si" src="https://icon.icepanel.io/AWS/svg/Networking-Content-Delivery/Virtual-Private-Cloud.svg" alt="" />VPC</span>
+            <span><img class="si" src="https://icon.icepanel.io/AWS/svg/Networking-Content-Delivery/Route-53.svg" alt="" />Route 53</span>
+            <span><img class="si" src="https://icon.icepanel.io/AWS/svg/Management-Governance/CloudWatch.svg" alt="" />CloudWatch</span>
+            <span><img class="si" src="https://icon.icepanel.io/AWS/svg/Analytics/OpenSearch-Service.svg" alt="" />OpenSearch</span>
+            <span><img class="si" src="https://cdn.simpleicons.org/logstash/005571" alt="" />Logstash</span>
+          </div>
+        </div>
+
+        <div class="skill-row">
+          <h3>DevOps, CI/CD &amp; Observability</h3>
+          <div class="tags">
+            <span><img class="si" src="https://cdn.simpleicons.org/docker/2496ED" alt="" />Docker</span>
+            <span><img class="si" src="https://cdn.simpleicons.org/kubernetes/326CE5" alt="" />Kubernetes</span>
+            <span><img class="si" src="https://cdn.simpleicons.org/terraform/844FBA" alt="" />Terraform</span>
+            <span>Terragrunt</span>
+            <span><img class="si dark-invert" src="https://cdn.simpleicons.org/ansible/000000" alt="" />Ansible</span>
+            <span><img class="si" src="https://cdn.simpleicons.org/jenkins/D24939" alt="" />Jenkins</span>
+            <span><img class="si dark-invert" src="https://cdn.simpleicons.org/github/181717" alt="" />GitHub Actions</span>
+            <span><img class="si" src="https://cdn.simpleicons.org/grafana/F46800" alt="" />Grafana</span>
+            <span><img class="si" src="https://cdn.simpleicons.org/mlflow/0194E2" alt="" />MLflow</span>
+            <span><img class="si" src="https://cdn.simpleicons.org/postman/FF6C37" alt="" />Postman</span>
+            <span>SonarQube</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="experience">
-      <h2><span class="num">03</span> Work Experience</h2>
+    <!-- Experience -->
+    <section class="section reveal" id="experience">
+      <div class="section-head">
+        <span class="num">04</span>
+        <h2>Experience</h2>
+      </div>
 
       <div class="timeline">
         <article class="job">
           <div class="job-head">
-            <h3>Software Engineer II <span class="company">· Smartsheet</span></h3>
+            <div>
+              <h3>Software Engineer II</h3>
+              <p class="company">Smartsheet</p>
+            </div>
             <span class="period">Oct 2025 – Present</span>
           </div>
           <ul>
-            <li><strong>Databricks Cost Optimization:</strong> Migrated multi-task streaming jobs from all-purpose to job clusters, reducing compute costs by <em>$200K+ annually</em>.</li>
-            <li><strong>Streaming Platform (Medallion):</strong> Built an end-to-end streaming pipeline (Airbyte → S3 → Databricks Auto Loader → Spark Structured Streaming → Gold tables) for scalable, reliable processing.</li>
-            <li><strong>CI/CD for Databricks:</strong> Drove CI/CD adoption via Databricks Asset Bundles, enabling automated, consistent deployments across environments.</li>
-            <li><strong>Real-Time Observability:</strong> Built a high-availability log ingestion pipeline (CloudWatch → Kinesis → Logstash → OpenSearch) enabling sub-second search and zero-data-loss ingestion at scale.</li>
-            <li><strong>Autoscaling &amp; Reliability:</strong> Led Kinesis stream autoscaling and Logstash pod scaling to sustain stable throughput during peak traffic.</li>
-            <li><strong>Legacy Pipeline Reliability:</strong> Improved legacy ingestion (Airbyte → S3 → Airflow → Snowflake), reducing daily failures by <em>~40%</em>.</li>
+            <li><strong>Databricks cost optimization:</strong> Migrated multi-task streaming jobs from all-purpose to job clusters, cutting compute costs by <em>$200K+ annually</em>.</li>
+            <li><strong>Generic multi-source ingestion framework:</strong> Re-architected legacy Snowflake pipelines onto Databricks <em>from scratch</em> — a reusable, config-driven template ingesting from Airbyte, REST APIs, and Databricks connectors as parallel tasks in one multi-task job (moved from all-purpose to job compute for cost), feeding a medallion pipeline (S3 → Auto Loader → Spark Structured Streaming → Gold).</li>
+            <li><strong>CDC pipeline (Postgres → Delta):</strong> Captured <em>change-data-capture</em> from the PostgreSQL binlog using <em>Flink</em>, streaming into Kinesis (one shard per table) and landing into <em>Delta tables</em> via a medallion architecture.</li>
+            <li><strong>CI/CD for Databricks:</strong> Drove adoption of Databricks Asset Bundles, enabling automated, consistent deployments across environments.</li>
+            <li><strong>Large-scale repo restructuring:</strong> Migrated <em>1900+ files</em> into a new parent folder with <em>zero breaking changes</em>, updating CI runners, GitLab CI, and AWS Secrets Manager fetching to align with the new structure.</li>
+            <li><strong>Real-time observability:</strong> Built a high-availability log pipeline (CloudWatch → Kinesis → Logstash → OpenSearch) with <em>sub-second search</em> and <em>zero-data-loss</em> ingestion at scale.</li>
+            <li><strong>Legacy reliability:</strong> Hardened legacy ingestion (Airbyte → S3 → Airflow → Snowflake), reducing daily failures by <em>~34%</em>.</li>
           </ul>
+          <div class="tech-row">
+            <span>Databricks</span><span>Spark Structured Streaming</span><span>Flink</span><span>Kinesis</span><span>PostgreSQL CDC</span><span>OpenSearch</span><span>Airflow</span><span>Snowflake</span>
+          </div>
         </article>
 
         <article class="job">
           <div class="job-head">
-            <h3>Data Engineer <span class="company">· Vestas</span></h3>
+            <div>
+              <h3>Data Engineer</h3>
+              <p class="company">Vestas</p>
+            </div>
             <span class="period">Feb 2024 – Sep 2025</span>
           </div>
           <ul>
-            <li><strong>File Download API:</strong> Built an API to fetch file metadata from DocumentDB and retrieve files from AWS S3.</li>
-            <li><strong>Data Ingestion &amp; Processing:</strong> Optimized Databricks/PySpark pipelines for solar &amp; wind farm data, reducing processing time by <em>70%</em>.</li>
-            <li><strong>Event Alarm System:</strong> Designed real-time alarms using Kafka, Redis, Kinesis, improving event-detection latency by <em>50%</em>.</li>
-            <li><strong>Real-time Pipeline:</strong> Built an OPC-UA ingestion pipeline to AWS, enhancing data availability by <em>96%</em>.</li>
-            <li><strong>Microservices &amp; Cost:</strong> Containerized Databricks jobs with Docker/Kubernetes, cutting infra costs by <em>$4,000/month</em>.</li>
-            <li><strong>EC2 Migration &amp; Scaling:</strong> Optimized workloads with containerized EC2, reducing costs by <em>40%</em> and improving performance.</li>
+            <li><strong>Real-time alarm system:</strong> Built <em>from scratch</em> — a <em>real-time, millisecond-latency</em> alarm platform on Kafka, Redis, and Kinesis (all containerized with Docker), exposing an API that serves alarms — warning, error, operational, and more — from DynamoDB with event open/close tracking and <em>Protobuf-encoded payloads</em>; also streamed alarm data through Kinesis into <em>Delta tables</em> via a Databricks job for the analytics and data science teams.</li>
+            <li><strong>OPC-UA IoT pipeline:</strong> Built <em>from scratch</em> after an AWS Greengrass POC fell short — asynchronously traverses the OPC-UA server's node tree, handles encryption, and streams to AWS MSK (Kafka), with local-server buffering for resilience when the internet drops or MSK is down; enhanced data availability by <em>96%</em>.</li>
+            <li><strong>MQTT ingestion:</strong> Pulled data from an MQTT broker and pushed to MSK using async Python libraries, fully containerized in Docker, feeding the same generic downstream ingestion pipeline.</li>
+            <li><strong>Autoscaling stream processor:</strong> Re-built a legacy Databricks streaming job as a Dockerized service transforming MSK data into Kinesis, using <em>KEDA</em> autoscaling on Kafka lag to cut ingestion latency from minutes to <em>10–20 seconds</em>.</li>
+            <li><strong>Prod → QA/Dev data replicator:</strong> Built a <em>KEDA-scalable</em> service that replicates data from <em>prod Kafka to QA/Dev Kafka</em> with configurable filtering and row limits, keeping non-prod running costs low.</li>
+            <li><strong>Ingestion &amp; processing:</strong> Optimized Databricks/PySpark pipelines for solar &amp; wind farm data, cutting processing time and pipeline latency by <em>~62%</em> by switching the source from S3 to Kinesis.</li>
+            <li><strong>File download API:</strong> Built an API to fetch file metadata from DocumentDB and retrieve files from AWS S3, with <em>cursor-based pagination</em> to page through web views listing hundreds of files.</li>
           </ul>
+          <div class="tech-row">
+            <span>PySpark</span><span>Kafka / MSK</span><span>MQTT</span><span>OPC-UA</span><span>Kinesis</span><span>KEDA</span><span>Redis</span><span>DynamoDB</span><span>Docker</span><span>Kubernetes</span>
+          </div>
         </article>
 
         <article class="job">
           <div class="job-head">
-            <h3>Assistant Data Engineer <span class="company">· Vestas</span></h3>
+            <div>
+              <h3>Assistant Data Engineer</h3>
+              <p class="company">Utopus Insights <span class="sub">(a Vestas company)</span></p>
+            </div>
             <span class="period">Feb 2023 – Jan 2024</span>
           </div>
           <ul>
-            <li><strong>Event Data Consolidation:</strong> Engineered turbine event tracking with accurate logging; created LLD and HLD.</li>
-            <li><strong>API Polling:</strong> Automated real-time ingestion via API pollers, increasing data-collection efficiency by <em>100%</em>.</li>
-            <li><strong>Latency Tracking:</strong> Built a monitoring system that reduced API latency by <em>36%</em>.</li>
-            <li><strong>ML Model Automation:</strong> Automated model registration in AWS S3, cutting manual effort by <em>12 hrs/week</em>.</li>
-            <li><strong>Databricks Upgrades:</strong> Ensured seamless version upgrades across <em>50+</em> jobs without failures.</li>
-            <li><strong>Forecasting &amp; Preprocessing:</strong> Raised unit-test coverage to <em>95%</em> and improved power-curve model accuracy by <em>7%</em>.</li>
+            <li><strong>Event data consolidation:</strong> Built new-customer ingestion that tracks wind-turbine events from API data — capturing states like warning, error, running, and service — with accurate logging; authored LLD &amp; HLD.</li>
+            <li><strong>Wind-farm data polling (API):</strong> Built <em>from scratch</em> a new API data source for a new customer — automated pollers with <em>checkpointing</em> (persisting the last-polled timestamp for reliable, gap-free resumption) that push real-time data into Delta tables, increasing data-collection efficiency by <em>100%</em>.</li>
+            <li><strong>Latency tracking:</strong> Built a monitoring system that surfaces data latency across different source services and pinpoints bottlenecks; resolving those pain points reduced API latency by <em>36%</em>.</li>
+            <li><strong>ML model automation:</strong> Automated the previously manual, accuracy-based model registration to AWS S3 — saving the team <em>12 hrs/week</em>; also raised unit-test coverage to <em>95%</em>.</li>
+            <li><strong>Platform upgrades:</strong> Delivered seamless Databricks <em>LTS</em> upgrades across <em>50+</em> jobs with rigorous <em>data-quality testing</em> and <em>zero pipeline failures</em>.</li>
           </ul>
+          <div class="tech-row">
+            <span>Databricks</span><span>AWS S3</span><span>MLflow</span><span>Python</span><span>Unit Testing</span>
+          </div>
         </article>
       </div>
     </section>
 
-    <section class="section" id="education">
-      <h2><span class="num">04</span> Education</h2>
-      <div class="job-head">
-        <h3>B.Tech, Information Technology <span class="company">· Jabalpur Engineering College</span></h3>
-        <span class="period">Jul 2019 – Apr 2023</span>
+    <!-- Achievements & Certifications -->
+    <section class="section reveal" id="achievements">
+      <div class="section-head">
+        <span class="num">05</span>
+        <h2>Achievements &amp; Certifications</h2>
       </div>
-      <p class="muted">Jabalpur, M.P. · 7.77 CGPA</p>
-    </section>
 
-    <section class="section" id="achievements">
-      <h2><span class="num">05</span> Achievements</h2>
-      <ul class="achievements">
-        <li><a class="ach-link" href="https://www.codechef.com/users/premtiwari14f" target="_blank" rel="noopener"><strong>CodeChef ↗</strong></a> 5★ · Global Rank 8 · College Rank 1st (Starters 70)</li>
-        <li><a class="ach-link" href="https://leetcode.com/u/prem14f/" target="_blank" rel="noopener"><strong>LeetCode ↗</strong></a> &amp; <a class="ach-link" href="https://www.geeksforgeeks.org/user/premlkt123/" target="_blank" rel="noopener"><strong>GFG ↗</strong></a> : Solved 450+ problems</li>
-        <li><strong>TCS CodeVita:</strong> Round 2 Global Rank 83</li>
-        <li><a class="ach-link" href="https://www.geeksforgeeks.org/user/premlkt123/" target="_blank" rel="noopener"><strong>GFG Job-A-Thon 6 ↗</strong></a> : Global Rank 76</li>
-        <li><strong>Snowflake Certifications:</strong>
-          <span class="cert-links">
+      <div class="two-col">
+        <div>
+          <h3 class="col-title">Competitive Programming</h3>
+          <ul class="achievements">
+            <li><a class="ach-link" href="https://www.codechef.com/users/premtiwari14f" target="_blank" rel="noopener"><strong>CodeChef ↗</strong></a> — 5★ · Global Rank 8 · College Rank 1 (Starters 70)</li>
+            <li><a class="ach-link" href="https://leetcode.com/u/prem14f/" target="_blank" rel="noopener"><strong>LeetCode ↗</strong></a> &amp; <a class="ach-link" href="https://www.geeksforgeeks.org/user/premlkt123/" target="_blank" rel="noopener"><strong>GFG ↗</strong></a> — 450+ problems solved</li>
+            <li><a class="ach-link" href="https://drive.google.com/file/d/1IbciAmqz7Y8NESAfF_hLhXyEHzW9FNl_/view?usp=sharing" target="_blank" rel="noopener"><strong>TCS CodeVita ↗</strong></a> — Round 2 Global Rank 83</li>
+            <li><a class="ach-link" href="https://drive.google.com/file/d/14MqRZaM0MDjgBrjLulz52H-pFFLaEYYh/view?usp=sharing" target="_blank" rel="noopener"><strong>GFG Job-A-Thon 6 ↗</strong></a> — Global Rank 76</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="col-title">Snowflake Certifications</h3>
+          <div class="cert-links">
             <a href="https://achieve.snowflake.com/23ab3a8b-5385-4381-ab8c-739de471c51a#acc.8QrqWa4d" target="_blank" rel="noopener">Collaboration &amp; Marketplace ↗</a>
             <a href="https://achieve.snowflake.com/2c4ed677-e18a-403d-9496-b221733350d4#acc.kE2SePz9" target="_blank" rel="noopener">Data Application ↗</a>
             <a href="https://achieve.snowflake.com/67aa6a4b-f3d9-4886-a0e3-14d053d1676d#acc.KMYrqgw4" target="_blank" rel="noopener">Data Lake ↗</a>
             <a href="https://achieve.snowflake.com/810f2bc5-b9cb-42fa-8d0e-07bd6bc1b5c5#acc.BLj75CGm" target="_blank" rel="noopener">Data Warehousing ↗</a>
             <a href="https://achieve.snowflake.com/c47f8edf-21a6-48f8-be7a-835d4eb55972#acc.sAkRndZB" target="_blank" rel="noopener">Data Engineering ↗</a>
-          </span>
-        </li>
-      </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="section" id="projects">
-      <h2><span class="num">06</span> Projects</h2>
-      <div class="cards">
-        <article class="card">
-          <h3>OOPs &amp; Machine Code Projects</h3>
-          <p class="stack">C++</p>
-          <p>Completed workshops on advanced inheritance, machine code, OOPs, GUI, and multithreading.</p>
-          <a class="card-link" href="https://drive.google.com/file/d/14MqRZaM0MDjgBrjLulz52H-pFFLaEYYh/view?usp=sharing" target="_blank" rel="noopener">View project ↗</a>
-        </article>
-        <article class="card">
-          <h3>Live Streaming Video Chat App</h3>
-          <p class="stack">Python · Socket</p>
-          <p>Built a real-time video chat application enabling seamless live video communication.</p>
-          <a class="card-link" href="https://drive.google.com/file/d/1IbciAmqz7Y8NESAfF_hLhXyEHzW9FNl_/view?usp=sharing" target="_blank" rel="noopener">View project ↗</a>
-        </article>
+    <!-- Contact -->
+    <section class="section contact-section reveal" id="contact">
+      <h2>Let's build something great.</h2>
+      <p>Open to backend &amp; data engineering opportunities and collaborations.</p>
+      <div class="hero-cta">
+        <a href="https://wa.me/919644846577" target="_blank" rel="noopener" class="btn btn-whatsapp">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.71.306 1.263.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Message on WhatsApp
+        </a>
+        <a href="mailto:premtiwari14f@gmail.com" class="btn btn-primary">✉ premtiwari14f@gmail.com</a>
+        <a href="https://www.linkedin.com/in/premtiwari14f/" target="_blank" rel="noopener" class="btn btn-ghost">Connect on LinkedIn</a>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>© <span id="year"></span> Prem Tiwari · Built with HTML &amp; CSS</p>
+    <p>© <span id="year"></span> Prem Tiwari · Built with HTML, CSS &amp; a bit of JavaScript</p>
   </footer>
 
   <script src="script.js"></script>
