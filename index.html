@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prem Tiwari — Software Engineer II</title>
+  <meta name="description" content="Prem Tiwari — Software Engineer II at Smartsheet. Data pipelines, real-time processing, cloud-native systems." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="avatar" aria-hidden="true">PT</div>
+      <h1>Prem Tiwari</h1>
+      <p class="role">Software Engineer II <span class="at">@</span> Smartsheet</p>
+      <p class="location">Bengaluru, Karnataka, India</p>
+
+      <div class="contact">
+        <a href="mailto:premxivfeb@gmail.com" class="chip">✉️ premxivfeb@gmail.com</a>
+        <a href="tel:+919993634163" class="chip">📞 +91 99936 34163</a>
+        <a href="https://github.com/premtiwari14f" target="_blank" rel="noopener" class="chip">GitHub</a>
+        <a href="#" target="_blank" rel="noopener" class="chip">LinkedIn</a>
+        <a href="#" target="_blank" rel="noopener" class="chip">LeetCode</a>
+        <a href="#" target="_blank" rel="noopener" class="chip">CodeChef</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="summary">
+      <h2><span class="num">01</span> Professional Summary</h2>
+      <p class="summary">
+        Results-driven SDE with expertise in scalable data pipelines, real-time processing, and IoT
+        data ingestion using protocols like OPC-UA and MQTT, alongside technologies like Kafka, Redis,
+        Spark, and AWS. Currently at Smartsheet, delivering cloud-native, high-performance energy data
+        solutions. Skilled in Python, PySpark, Delta Lake, ETL, Data Warehousing, Data Modeling and
+        Databricks, with a focus on optimizing large-scale workflows. Strong team player, passionate
+        about collaborative problem-solving and building efficient, maintainable, and impactful data systems.
+      </p>
+    </section>
+
+    <section class="section" id="skills">
+      <h2><span class="num">02</span> Skills</h2>
+
+      <div class="skill-group">
+        <h3>Programming &amp; Core</h3>
+        <div class="tags">
+          <span>Python</span><span>C++</span><span>Java</span><span>OOPs</span><span>DSA</span>
+          <span>Unit Testing</span><span>Mocking</span><span>Feature Engineering</span>
+          <span>Data Cleaning</span><span>Machine Learning</span><span>Visualization</span>
+          <span>LLD</span><span>HLD</span><span>Excel</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3>Data Engineering, Cloud &amp; Databases</h3>
+        <div class="tags">
+          <span>AWS (EC2, S3, Lambda, SNS, SQS, Kinesis, DynamoDB, Glue)</span>
+          <span>Databricks</span><span>Snowflake</span><span>Airflow</span><span>Airbyte</span>
+          <span>DBT</span><span>Spark</span><span>Kafka</span><span>Redis</span><span>ETL</span>
+          <span>Data Warehousing</span><span>Data Modeling</span><span>OpenSearch</span>
+          <span>Logstash</span><span>CloudWatch</span><span>PostgreSQL</span><span>MongoDB</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3>DevOps, CI/CD &amp; Tools</h3>
+        <div class="tags">
+          <span>Docker</span><span>Kubernetes</span><span>Git</span><span>GitHub Actions</span>
+          <span>Jenkins</span><span>Terraform</span><span>Terragrunt</span><span>Ansible</span>
+          <span>MLflow</span><span>SonarQube</span><span>Postman</span><span>Grafana</span>
+          <span>Databricks Asset Bundles</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <h2><span class="num">03</span> Work Experience</h2>
+
+      <div class="timeline">
+        <article class="job">
+          <div class="job-head">
+            <h3>Software Engineer II <span class="company">· Smartsheet</span></h3>
+            <span class="period">Oct 2025 – Present</span>
+          </div>
+          <ul>
+            <li><strong>Databricks Cost Optimization:</strong> Migrated multi-task streaming jobs from all-purpose to job clusters, reducing compute costs by <em>$200K+ annually</em>.</li>
+            <li><strong>Streaming Platform (Medallion):</strong> Built an end-to-end streaming pipeline (Airbyte → S3 → Databricks Auto Loader → Spark Structured Streaming → Gold tables) for scalable, reliable processing.</li>
+            <li><strong>CI/CD for Databricks:</strong> Drove CI/CD adoption via Databricks Asset Bundles, enabling automated, consistent deployments across environments.</li>
+            <li><strong>Real-Time Observability:</strong> Built a high-availability log ingestion pipeline (CloudWatch → Kinesis → Logstash → OpenSearch) enabling sub-second search and zero-data-loss ingestion at scale.</li>
+            <li><strong>Autoscaling &amp; Reliability:</strong> Led Kinesis stream autoscaling and Logstash pod scaling to sustain stable throughput during peak traffic.</li>
+            <li><strong>Legacy Pipeline Reliability:</strong> Improved legacy ingestion (Airbyte → S3 → Airflow → Snowflake), reducing daily failures by <em>~40%</em>.</li>
+          </ul>
+        </article>
+
+        <article class="job">
+          <div class="job-head">
+            <h3>Data Engineer <span class="company">· Vestas</span></h3>
+            <span class="period">Feb 2024 – Sep 2025</span>
+          </div>
+          <ul>
+            <li><strong>File Download API:</strong> Built an API to fetch file metadata from DocumentDB and retrieve files from AWS S3.</li>
+            <li><strong>Data Ingestion &amp; Processing:</strong> Optimized Databricks/PySpark pipelines for solar &amp; wind farm data, reducing processing time by <em>70%</em>.</li>
+            <li><strong>Event Alarm System:</strong> Designed real-time alarms using Kafka, Redis, Kinesis, improving event-detection latency by <em>50%</em>.</li>
+            <li><strong>Real-time Pipeline:</strong> Built an OPC-UA ingestion pipeline to AWS, enhancing data availability by <em>96%</em>.</li>
+            <li><strong>Microservices &amp; Cost:</strong> Containerized Databricks jobs with Docker/Kubernetes, cutting infra costs by <em>$4,000/month</em>.</li>
+            <li><strong>EC2 Migration &amp; Scaling:</strong> Optimized workloads with containerized EC2, reducing costs by <em>40%</em> and improving performance.</li>
+          </ul>
+        </article>
+
+        <article class="job">
+          <div class="job-head">
+            <h3>Assistant Data Engineer <span class="company">· Vestas</span></h3>
+            <span class="period">Feb 2023 – Jan 2024</span>
+          </div>
+          <ul>
+            <li><strong>Event Data Consolidation:</strong> Engineered turbine event tracking with accurate logging; created LLD and HLD.</li>
+            <li><strong>API Polling:</strong> Automated real-time ingestion via API pollers, increasing data-collection efficiency by <em>100%</em>.</li>
+            <li><strong>Latency Tracking:</strong> Built a monitoring system that reduced API latency by <em>36%</em>.</li>
+            <li><strong>ML Model Automation:</strong> Automated model registration in AWS S3, cutting manual effort by <em>12 hrs/week</em>.</li>
+            <li><strong>Databricks Upgrades:</strong> Ensured seamless version upgrades across <em>50+</em> jobs without failures.</li>
+            <li><strong>Forecasting &amp; Preprocessing:</strong> Raised unit-test coverage to <em>95%</em> and improved power-curve model accuracy by <em>7%</em>.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <h2><span class="num">04</span> Education</h2>
+      <div class="job-head">
+        <h3>B.Tech, Information Technology <span class="company">· Jabalpur Engineering College</span></h3>
+        <span class="period">Jul 2019 – Apr 2023</span>
+      </div>
+      <p class="muted">Jabalpur, M.P. · 7.77 CGPA</p>
+    </section>
+
+    <section class="section" id="achievements">
+      <h2><span class="num">05</span> Achievements</h2>
+      <ul class="achievements">
+        <li><strong>CodeChef:</strong> 5★ · Global Rank 8 · College Rank 1st (Starters 70)</li>
+        <li><strong>LeetCode &amp; GFG:</strong> Solved 450+ problems</li>
+        <li><strong>TCS CodeVita:</strong> Round 2 Global Rank 83</li>
+        <li><strong>GFG Job-A-Thon 6:</strong> Global Rank 76</li>
+        <li><strong>Snowflake Certifications:</strong> Collaboration, Marketplace, Data Application, Data Lake, Data Warehousing, Data Engineering</li>
+      </ul>
+    </section>
+
+    <section class="section" id="projects">
+      <h2><span class="num">06</span> Projects</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>OOPs &amp; Machine Code Projects</h3>
+          <p class="stack">C++</p>
+          <p>Completed workshops on advanced inheritance, machine code, OOPs, GUI, and multithreading.</p>
+        </article>
+        <article class="card">
+          <h3>Live Streaming Video Chat App</h3>
+          <p class="stack">Python · Socket</p>
+          <p>Built a real-time video chat application enabling seamless live video communication.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Prem Tiwari · Built with HTML &amp; CSS</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
